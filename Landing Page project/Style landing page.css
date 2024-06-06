@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(103, 255, 103);
+   
+}
+
+.background{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+min-height: 100vh;
+background-image: url(image/chappanthaali\ indian\ food.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+ filter: blur(5px); 
+box-shadow: 0 0 6rem white;
+z-index: -1;
+
+
+}
+.content{
+    color: #fff;
+    margin-top:200px;
+    text-align: center;
+}
+.content h1{
+    font-size: 95px;
+    margin-bottom: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.content h1:hover{
+    font-size: 101px;
+}
+.content p{
+    font-size: 35px;
+}
+
+.content .navbaar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+   
+}
+ .content .navbaar ul{
+    /* display: flex;
+    align-items:right;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+     */
+   list-style: none;
+   float: right;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   transition-property: all;
+    transition-duration: 0.5s;
+} 
+.content .navbaar ul li a{
+    line-height: 80px;
+    color: rgb(128, 0, 0);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    font-weight: bold;
+    
+}
+.content .navbaar ul  :hover{
+    color: rgb(0, 128, 79);
+    font-size: 35px;
+}
+
+.content h1 span{
+    color: rgb(128, 0, 0);
+   
+}
+.content  p span{
+    
+    font-weight: bold;
+    text-shadow: 0 0 3rem black;
+}
+.content p #yo{
+color: rgb(128, 0, 0);
+}
+
+.dish{
+    position: absolute;
+    bottom: -500px;
+    font-size: 60px;
+    color: rgb(128, 0, 0);
+   
+    
+     
+}
+ .box{
+    height: 350px;
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 10px;
+    box-shadow: 0 0 3rem rgb(255, 255, 255);
+    
+}
+.manybox{
+   
+    display: flex;
+    
+    
+    background-color: #fff;
+   }
+   
+   .manybox .boxe1 {
+    
+    background-image: url(image/masala\ dosa\ pic.jpg);
+    background-size: cover;
+    background-position: center;
+
+   } 
+   .manybox .boxe1 p{
+    font-size: 50px;
+    color: rgb(255, 242, 54);
+  position: absolute;
+  bottom: -10px;
+  font-weight: bold;
+   }
+
+   .manybox .boxe2{
+    background-image: url(image/dal\ chawal\ pic.jpg) ;
+    background-size: cover;
+    background-position: center;
+   }
+.manybox .boxe2 p{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    font-weight: bold;
+}
+
+
+
+.secondbox{
+position: absolute;
+bottom: -920px;
+right: 10px;
+display: flex;
+}
+
+.boxssss{
+    height: 350px;
+    width: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 3rem rgb(255, 255, 255);
+
+}
+
+.secondbox .boxe3{
+    background-image: url(image/palak\ pannee\ pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.secondbox .boxe3 p{
+    font-size: 50px;
+    color: rgb(3, 3, 3);
+    position: absolute;
+    bottom: -10px;
+   
+    font-weight: bold;
+}
+.secondbox .boxe3 p span{
+    color: #fff;
+}
+
+.secondbox .boxe4{
+    background-image: url(image/indin\ food\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+.secondbox .boxe4 p{
+    font-size: 50px;
+    color: rgb(238, 255, 0);
+    position: absolute;
+    bottom: -10px;
+}
+
+#contactus{
+    font-size: 60px;
+    position: absolute;
+    bottom: -1600px;
+    color: rgb(128, 0, 0);
+    font-weight: bold;
+}
+ 
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ccfaa1;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+    
+    
+}
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+ @media only screen and (max-width:600px){
+    .secondbox {
+        position: absolute;
+        right: -1000px;
+    }
+    .background{
+        width: 500%;
+    }
+    .content .navbaar ul{
+       position: absolute;
+       right: -1000px;
+    }
+    .content h1{
+        position: absolute;
+        right: -700px;
+    }
+    .content  p{
+        position: absolute;
+        bottom: 300px; 
+        right: -800px;
+    }
+ }
